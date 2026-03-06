@@ -11,7 +11,6 @@ async function waitForOTP() {
     output: process.stdout,
   });
 
-  // Heartbeat to keep session alive
   const heartbeat = setInterval(() => {
     console.log("Session alive... waiting for OTP input");
   }, 10000);
